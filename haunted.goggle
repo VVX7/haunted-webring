@@ -1,0 +1,106 @@
+! name: Haunted Search
+! description: Prioritize Haunted content
+! public: true
+! author: Ghosts
+! avatar: #383144
+! homepage: https://haunted.computer/getting-started
+
+! Goggle extras
+$boost=2,site=github.io
+$boost=2,site=github.com
+$boost=2,site=stackoverflow.com
+$boost=3,site=haunted.computer
+/blog.$boost=2
+/blog/$boost=2
+/docs.$boost=2
+/docs/$boost=2
+/doc/$boost=2
+/Doc/$boost=2
+/manual/$boost=2
+
+
+!!! WebRing Section !!!
+
+! https://malware.foundation/	bane's blog (fuzzing, detection engineering)
+$boost=4,site=malware.foundation
+
+
+! gemini://dio9sys.fun	dio9sys's gemini capsule (writeups and reference sheets)
+! $boost=4,site=dio9sys.fun - gemini not supported yet in most common browser -.-"
+
+
+! https://ortiz.sh/	FridayOrtiz's blog (eBPF, systems programming, networking)
+$boost=4,site=ortiz.sh
+
+
+! https://ftp.lol/	FTP server (Version 4.20) ready
+$boost=4,site=ftp.lol
+
+
+! https://nop.codes/	grenlith's blog (re, file formats, hax)
+$boost=4,site=nop.codes
+
+
+! https://herm.it/	hermit's site
+$boost=4,site=nop.codes
+
+
+! http://h0wdy.partners/	h0wdy's blog (fuzzing, gameboy, networking)
+$boost=4,site=h0wdy.partners
+
+
+! https://pixeldreams.tokyo/	kyo's blog (programming, ctf, design)
+$boost=4,site=pixeldreams.tokyo
+
+
+! https://n0.lol/	netspooky's blog (protocols, golf, ascii art, vx, hax)
+$boost=4,site=n0.lol
+
+
+! https://novafacing.github.io/	n0va's blog (CTFs, compilers, fuzzing)
+$boost=4,site=novafacing.github.io
+
+
+! https://remyhax.xyz/	remy's blog (networking, wasm, cursed things, golf)
+$boost=4,site=remyhax.xyz
+
+
+! https://www.da.vidbuchanan.co.uk/blog/	retr0id's blog (RE, hacks, golf, cryptography)
+/blog/$boost=4,site=www.da.vidbuchanan.co.uk
+
+
+! https://s01den.github.io/	s01den's blog (tmp.0ut, vx, malware analysis)
+$boost=4,site=s01den.github.io
+
+
+! https://tmpout.sh/	tmp.0ut zine (linux, vx, elf)
+$boost=4,site=tmpout.sh
+
+
+! https://www.guitmz.com/	TMZ's blog (linux, vx, elf, programming)
+$boost=4,site=www.guitmz.com
+
+
+! https://pompel.me/	thypon's blog (appsec, web, rant, gameboy, ctf, cars, random)
+$boost=4,site=pompel.me
+! thypon extras
+$boost=3,site=blog.doyensec.com
+
+! https://vvx7.io/	VVX7's blog (adversary simulation, embedded, networking)
+$boost=4,site=vvx7.io
+
+
+! https://xcellerator.github.io/	xcellerator's blog (linux, kernel, re, golf, embedded)
+$boost=4,site=xcellerator.github.io
+
+
+! https://0w.nz/	xeR0's art (ascii and ansi art)
+$boost=4,site=0w.nz
+
+
+! https://mfavata.github.io/	xfavatax's blog (ctf, writeups)
+$boost=4,site=mfavata.github.io
+
+
+! https://hacking.rip/ ...
+$boost=4,site=hacking.rip
