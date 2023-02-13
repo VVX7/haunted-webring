@@ -4,6 +4,7 @@ require 'ostruct'
 require 'csv'
 require 'fileutils'
 require 'uri'
+require 'open-uri'
 
 options = {
   :output_dir => '_pages/',
@@ -16,11 +17,11 @@ OptionParser.new do |opts|
     options[:verbose] = v
   end
 
-  opts.on("-o", "--output-dir", "Output Directory") do |o|
+  opts.on("-oDIR", "--output-dir=DIR", "Output Directory") do |o|
     options[:output_dir] = o
   end
 
-  opts.on("-i", "--webring-file", "WebRing Links file") do |i|
+  opts.on("-iFILE", "--webring-file=FILE", "WebRing Links file") do |i|
     options[:webring_file] = i
   end
 end.parse!
@@ -63,7 +64,7 @@ class WrapArray < Array
   end
 end
 
-links = WrapArray.new CSV.readlines(options[:webring_file]).map(&:first)
+links = WrapArray.new CSV.parse(URI.open(options[:webring_file]).read).map(&:first)
 
 FileUtils.mkdir_p options[:output_dir]
 
